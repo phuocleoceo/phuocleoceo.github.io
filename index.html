@@ -171,6 +171,11 @@
                     <li class="list-inline-item"><i class="fab fa-npm"></i></li>
                     <li class="list-inline-item"><i class="fab fa-github-square"></i></li>
                 </ul>
+                <div>
+                    <div class="bar">
+                        <div class="bar-percent" style="width: 25%;"></div>
+                    </div>
+                </div>
                 <div class="subheading mb-3">Workflow</div>
                 <ul class="fa-ul mb-0">
                     <li>
@@ -184,7 +189,7 @@
                     <li>
                         <span class="fa-li"><i class="fas fa-check"></i></span>
                         Console.Write("Goodbye, World !");
-                    </li>                    
+                    </li>
                 </ul>
             </div>
         </section>
@@ -209,11 +214,31 @@
                     <li>
                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                         Consolation award with Chemistry in Provincial excellent student competition
-                    </li>                                     
+                    </li>
                 </ul>
             </div>
         </section>
     </div>
+    <!-- Counter Viewer -->
+    <!-- https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website -->
+    <div id="CounterVisitor" style="text-align: center;">
+    </div>
+
+    <script>
+        var n = localStorage.getItem('on_load_counter');
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+        localStorage.setItem("on_load_counter", n);
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '';
+        for (var i of nums) {
+            document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }    
+    </script>
+    <!-- Counter Viewer -->
+
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
