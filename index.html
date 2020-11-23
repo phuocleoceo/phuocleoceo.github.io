@@ -190,6 +190,14 @@
                         <span class="fa-li"><i class="fas fa-check"></i></span>
                         Console.Write("Goodbye, World !");
                     </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        No code No bug 
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>
+                        Only code with high Adrenaline !
+                    </li>
                 </ul>
             </div>
         </section>
@@ -224,19 +232,6 @@
     <div id="CounterVisitor" style="text-align: center;">
     </div>
 
-    <script>
-        var n = localStorage.getItem('on_load_counter');
-        if (n === null) {
-            n = 0;
-        }
-        n++;
-        localStorage.setItem("on_load_counter", n);
-        nums = n.toString().split('').map(Number);
-        document.getElementById('CounterVisitor').innerHTML = '';
-        for (var i of nums) {
-            document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
-        }    
-    </script>
     <!-- Counter Viewer -->
 
     <!-- Bootstrap core JS-->
